@@ -1,0 +1,96 @@
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop
+$ mkdir Sprint-0
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop
+$ cd Sprint-0
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0
+$ touch Getting' 'Started.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0
+$ touch Git' 'Branching.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0
+$ touch Ditributed' 'Git.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0
+$ git init
+Initialized empty Git repository in C:/Users/Dina/Desktop/Sprint-0/.git/
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git add *.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git commit -m "First commit,adding files to the local repository."
+[master (root-commit) 9a133f0] First commit,adding files to the local repository.
+ 3 files changed, 187 insertions(+)
+ create mode 100644 Ditributed Git.txt
+ create mode 100644 Getting Started.txt
+ create mode 100644 Git Branching.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git rm Git' 'Branching.txt
+rm 'Git Branching.txt'
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git reset --hard HEAD
+HEAD is now at 9a133f0 First commit,adding files to the local repository.
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git remote add origin https://github.com/NadaHammouda/Sprint-0-Individual-task-.git
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 7.99 KiB | 2.66 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/NadaHammouda/Sprint-0-Individual-task-.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git touch README.md
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git branch ReadMe
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git checkout ReadMe
+Switched to branch 'ReadMe'
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (ReadMe)
+$ git add README.md
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (ReadMe)
+$ git commit -m "Adding README.md file to the local repositary."
+[ReadMe f6a6d4f] Adding README.md file to the local repositary.
+ 1 file changed, 9 insertions(+)
+ create mode 100644 README.md
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (ReadMe)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git merge ReadMe
+Updating 9a133f0..f6a6d4f
+Fast-forward
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 README.md
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 487 bytes | 487.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NadaHammouda/Sprint-0-Individual-task-.git
+   9a133f0..f6a6d4f  master -> master
+
+
