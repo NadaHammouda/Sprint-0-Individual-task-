@@ -93,4 +93,25 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/NadaHammouda/Sprint-0-Individual-task-.git
    9a133f0..f6a6d4f  master -> master
 
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git add AllMyCommands.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git commit -m "Adding AllMyCommands.txt"
+[master 785e676] Adding AllMyCommands.txt
+ 1 file changed, 96 insertions(+)
+ create mode 100644 AllMyCommands.txt
+
+Nada@DESKTOP-HGTLNSI MINGW32 ~/Desktop/Sprint-0 (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.10 KiB | 1.10 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NadaHammouda/Sprint-0-Individual-task-.git
+   f6a6d4f..785e676  master -> master
+
+
 
